@@ -572,3 +572,122 @@ div {
     border-radius: 10%;
   }
 }
+.faq{
+  height: 100vh;
+}
+h2{
+  margin: auto;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #0A1F0D;
+}
+.caption {
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 13px;
+	letter-spacing: 0.04em;
+	text-align: left;
+	text-transform: uppercase;
+	color: var(--secondary);
+}
+.title {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 31px;
+	letter-spacing: 0em;
+	text-align: center;
+	margin-bottom: 8px;
+	color: var(--secondary);
+}
+
+.faq {
+	max-width: 80%;
+	margin: auto;
+}
+.box-content-colapse {
+	width: 95%;
+	height: auto;
+	position: relative;
+}
+
+.intro-colapse {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.details-comp {
+	cursor: pointer;
+	width: calc(100% - 32px);
+	padding: 16px;
+	border-radius: 8px;
+	margin-bottom: 32px;
+	position: relative;
+	left: 0px;
+	background: white;
+	filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
+	-webkit-filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
+	-moz-filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
+}
+
+.details-comp > p {
+	padding: 0 16px;
+}
+
+.summary-colapse {
+	list-style: none;
+	border-radius: 8px;
+	padding-left: 16px;
+	color: var(--ternary);
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.summary-colapse::-webkit-details-marker {
+	display: none;
+}
+
+.details-comp[open] > .summary-colapse::after {
+	display: flex;
+	justify-content: space-between;
+	content: url("https://cdn-icons-png.flaticon.com/24/7153/7153564.png");
+	font-size: 16px;
+	align-items: center;
+	padding-right: 24px;
+}
+
+.details-comp > .summary-colapse::after {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	content: url("https://cdn-icons-png.flaticon.com/24/7153/7153566.png");
+	font-size: 16px;
+	padding-right: 24px;
+}
+
+.details-comp[open] p {
+	animation: details-show 350ms linear;
+}
+
+.details-comp:not([open]) p {
+	opacity: 0;
+}
+
+@keyframes details-show {
+	0% {
+		opacity: 0;
+		transform: translatey(-25px);
+	}
+	100% {
+		opacity: 1;
+		transform: translatey(0);
+	}
+}
