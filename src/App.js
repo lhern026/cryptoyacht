@@ -204,7 +204,7 @@ function App() {
         <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
+          <s.Container flex={1} jc={"center"} ai={"center"} style={{width : 10}} >
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
           </s.Container>
           <s.SpacerLarge />
@@ -380,6 +380,10 @@ function App() {
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+        <div>
+        
+        
+        </div>
           <s.TextDescription
             style={{
               textAlign: "center",
@@ -391,6 +395,7 @@ function App() {
             Once you make the purchase, you cannot undo this action.
           </s.TextDescription>
           <s.SpacerSmall />
+          
           <s.TextDescription
             style={{
               textAlign: "center",
@@ -404,6 +409,7 @@ function App() {
         </s.Container>
       </s.Container>
     </s.Screen>
+    
   );
 }
 
