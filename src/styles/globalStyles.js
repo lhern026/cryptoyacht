@@ -10,6 +10,7 @@ export const Screen = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  
 `;
 
 // Used for providing space between components
@@ -26,8 +27,8 @@ export const SpacerSmall = styled.div`
 
 // Used for providing space between components
 export const SpacerMedium = styled.div`
-  height: 24px;
-  width: 24px;
+  height: 10%;
+  width: 10%;
 `;
 
 // Used for providing space between components
@@ -48,11 +49,12 @@ export const Container = styled.div`
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
+  backdrop-filter: blur(9px);
 `;
 
 export const TextTitle = styled.p`
   color: var(--primary-text);
-  font-size: 22px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
 `;
