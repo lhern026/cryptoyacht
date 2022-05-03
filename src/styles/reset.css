@@ -391,6 +391,7 @@ div {
   margin: auto;
   backdrop-filter: blur(20px);
 }
+
 .timeline {
   position: relative;
   width: 100%;
@@ -519,6 +520,17 @@ div {
   font-size: 1.5rem;
   font-weight: 900;
   color: #0A1F0D;
+}
+.roadmap{
+  padding: 2rem;
+  margin-left: 25%;
+}
+@media only screen and (max-width: 600px) {
+  .roadmap {
+    background-color: lightblue;
+    opacity: .7;
+    margin: auto;
+  }
 }
 
 .container .content p {
