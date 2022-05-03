@@ -387,7 +387,7 @@ div {
  
 }
 .rest {
-  height: 100rem;
+  height: 120rem;
   margin: auto;
   backdrop-filter: blur(20px);
 }
@@ -515,7 +515,7 @@ div {
 }
 
 .container .content h2 {
-  margin: 0 0 10px 0;
+  margin: auto;
   font-size: 1.5rem;
   font-weight: 900;
   color: #0A1F0D;
@@ -577,7 +577,7 @@ div {
 }
 h2{
   margin: auto;
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-weight: 900;
   color: #0A1F0D;
 }

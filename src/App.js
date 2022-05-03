@@ -472,7 +472,7 @@ function App() {
         </s.Container>
       </s.Container>
       <div className="rest">
-        <h1 className="header gradient-text">Crypto <br></br > <span id="yacht">Yacht</span> <br></br> Club</h1>
+        
         <div>
           <h2  id="roadmap">Roadmap</h2>
           <div class="timeline">
