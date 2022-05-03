@@ -66,7 +66,7 @@ export const ResponsiveWrapper = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  width: 200px;
+  width: 10%;
   @media (min-width: 767px) {
     width: 300px;
   }
@@ -79,7 +79,7 @@ export const StyledImg = styled.img`
   border: 4px dashed var(--secondary);
   background-color: var(--accent);
   border-radius: 100%;
-  width: 200px;
+  width: 100%;
   @media (min-width: 900px) {
     width: 250px;
   }
@@ -223,8 +223,8 @@ function App() {
         <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"} style={{width : 10}} >
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+          <s.Container flex={1} jc={"center"} ai={"center"} style={{width : 100}} >
+            <StyledImg alt={"example"} src={"/config/images/example.gif"} style={{ transform: "scaleX(-1)" }}  />
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -235,8 +235,8 @@ function App() {
               backgroundColor: "var(--accent)",
               padding: 24,
               borderRadius: 24,
-              border: "4px dashed var(--secondary)",
-              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+              border: "4px solid var(--secondary)",
+              boxShadow: "0px 5px 11px 2px var(--secondary)",
             }}
           >
             <s.TextTitle
