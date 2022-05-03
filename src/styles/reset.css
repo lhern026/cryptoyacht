@@ -522,7 +522,7 @@ div {
   color: #0A1F0D;
 }
 .roadmap{
-  padding: 2rem;
+ 
   margin-left: 25%;
 }
 @media only screen and (max-width: 600px) {
@@ -592,6 +592,11 @@ h2{
   font-size: 5rem;
   font-weight: 900;
   color: #0A1F0D;
+}
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 3rem;
+  }
 }
 .caption {
 	font-size: 10px;
