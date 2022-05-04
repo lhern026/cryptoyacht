@@ -52,7 +52,7 @@ export const connect = () => {
     const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
       window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/");
-      alert('hello')
+      alert('hello');
     }
     if (metamaskIsInstalled) {
       Web3EthContract.setProvider(ethereum);
@@ -91,6 +91,8 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
+      window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/");
+
       dispatch(connectFailed("Install Metamask."));
     }
   };
