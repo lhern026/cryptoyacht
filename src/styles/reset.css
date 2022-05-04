@@ -389,7 +389,7 @@ div {
 .rest {
   height: 120rem;
   margin: auto;
-  backdrop-filter: blur(20px);
+
 }
 
 .timeline {
@@ -579,7 +579,7 @@ div {
   }
 }
 .faq{
-  height: 100vh;
+  
 }
 h2{
   margin: auto;
@@ -612,10 +612,18 @@ h2{
 	margin-bottom: 8px;
 	color: var(--secondary);
 }
-
+.faq h2{
+  
+  margin-left: 7rem;
+  margin-bottom: 2rem;
+}
 .faq {
-	max-width: 80%;
-	margin: auto;
+	width: 90%;
+  top: 10%;
+	margin-left: 10%;
+  
+  margin-top: -80%;
+
 }
 .box-content-colapse {
 	width: 95%;

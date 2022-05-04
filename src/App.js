@@ -12,22 +12,21 @@ const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
 
 export const StyledButton = styled.button`
-  padding: 10px;
-  border-radius: 50px;
-  border: none;
-  background-color: var(--secondary);
-  padding: 10px;
-  font-weight: bold;
-  color: var(--secondary-text);
-  width: 100px;
-  cursor: pointer;
-  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  :active {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
+background: -webkit-linear-gradient(left, #0A1F0D, #35aee2);
+background-size: 200% 200%;
+animation: gradient-animation 4s ease infinite;
+height: 4rem;
+border: 0;
+margin: auto;
+margin-top: 1rem;
+
+padding-left: 40px;
+padding-right: 40px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+font-weight: bold;
+color: snow;
   }
 `;
 
@@ -235,7 +234,7 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+        
       >
         <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         <s.SpacerSmall />
@@ -270,6 +269,7 @@ function App() {
               style={{
                 textAlign: "center",
                 color: "var(--primary-text)",
+                
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
@@ -522,8 +522,10 @@ function App() {
       </div>
                     </div>
             </div>
-            <h2>FAQ</h2>
+            
+            
             <div className="faq">
+              <h2>FAQ</h2>
             <div class="box-content-colapse">
 	<div class="intro-colapse">
 		<span class="caption primary-medium-color"></span>

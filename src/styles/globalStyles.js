@@ -49,7 +49,7 @@ export const Container = styled.div`
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
-  backdrop-filter: blur(9px);
+  
 `;
 
 export const TextTitle = styled.p`
