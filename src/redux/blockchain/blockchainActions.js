@@ -40,10 +40,7 @@ export const connect = () => {
         Accept: "application/json",
       },
     });
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-      window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
-      
-    }
+   
     const abi = await abiResponse.json();
     const configResponse = await fetch("/config/config.json", {
       headers: {
@@ -92,7 +89,7 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
-      window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/");
+      dispatch(window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/"));
 
       dispatch(connectFailed("Install Metamask."));
     }
