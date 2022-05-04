@@ -40,6 +40,10 @@ export const connect = () => {
         Accept: "application/json",
       },
     });
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
+      
+    }
     const abi = await abiResponse.json();
     const configResponse = await fetch("/config/config.json", {
       headers: {
@@ -50,10 +54,7 @@ export const connect = () => {
     const CONFIG = await configResponse.json();
     const { ethereum } = window;
     const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-      window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
-      alert('hello');
-    }
+    
     if (metamaskIsInstalled) {
       Web3EthContract.setProvider(ethereum);
       let web3 = new Web3(ethereum);
