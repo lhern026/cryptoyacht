@@ -157,17 +157,17 @@ function App() {
   const openWindow = () => {
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
           
-      if (ethereum.isMetaMask){
-        return;
-      }else{
+      if(navigator.userAgent.indexOf("Safari") || navigator.userAgent.indexOf("Chrome")){
         window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
-      }
+      
       // open the deeplink page 
       
       
+      }else{
+        return;
       }
 
-  }
+  }}
   const decrementMintAmount = () => {
     let newMintAmount = mintAmount - 1;
     if (newMintAmount < 1) {
