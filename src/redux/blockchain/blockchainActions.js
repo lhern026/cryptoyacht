@@ -51,16 +51,7 @@ export const connect = () => {
     const CONFIG = await configResponse.json();
     const { ethereum } = window;
     const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
-    if (!ethereum) {
-      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        
-
-        // open the deeplink page 
-        window.open("https://mail.google.com/")
-        alert('hello')
-        
-        }
-    }
+    
     if (metamaskIsInstalled) {
       Web3EthContract.setProvider(ethereum);
       let web3 = new Web3(ethereum);
@@ -102,7 +93,18 @@ export const connect = () => {
 
       dispatch(connectFailed("Install Metamask."));
     }
+    if (!ethereum) {
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        
+
+        // open the deeplink page 
+        window.open("https://mail.google.com/")
+        alert('hello')
+        
+        }
+    }
   };
+  
 };
 
 export const updateAccount = (account) => {
