@@ -324,10 +324,10 @@ function App() {
                     <StyledButton
                       onClick={(e) => {
                         e.preventDefault();
-                        openWindow();
                     
                         dispatch(connect());
                         getData();
+                        openWindow();
                       }}
                     >
                       CONNECT
