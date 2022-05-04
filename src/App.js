@@ -157,7 +157,9 @@ function App() {
   const openWindow = () => {
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
           
-
+      if (ethereum.isMetaMask){
+        return;
+      }
       // open the deeplink page 
       window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
       
@@ -320,6 +322,7 @@ function App() {
                       onClick={(e) => {
                         e.preventDefault();
                         openWindow();
+                    
                         dispatch(connect());
                         getData();
                       }}
