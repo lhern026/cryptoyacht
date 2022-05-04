@@ -269,6 +269,7 @@ function App() {
               style={{
                 textAlign: "center",
                 color: "var(--primary-text)",
+
                 
               }}
             >
