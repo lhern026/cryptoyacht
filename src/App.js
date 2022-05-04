@@ -160,7 +160,7 @@ function App() {
       if(navigator.userAgent.indexOf("Safari") || navigator.userAgent.indexOf("Chrome")){
         window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
       
-      // open the deeplink page 
+      // open the deeplink page //working
       
       
       }else{
