@@ -93,19 +93,11 @@ export const connect = () => {
 
       dispatch(connectFailed("Install Metamask."));
     }
-    if (!ethereum) {
-      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        
-
-        // open the deeplink page 
-        window.open("https://mail.google.com/")
-        alert('hello')
-        
-        }
-    }
+ 
   };
   
 };
+
 
 export const updateAccount = (account) => {
   return async (dispatch) => {
