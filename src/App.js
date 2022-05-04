@@ -159,9 +159,11 @@ function App() {
           
       if (ethereum.isMetaMask){
         return;
+      }else{
+        window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
       }
       // open the deeplink page 
-      window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
+      
       
       }
 
