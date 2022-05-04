@@ -702,3 +702,53 @@ h2{
 		transform: translatey(0);
 	}
 }
+.whitePaper{
+  /* border: 1px solid black; */
+  height: 46rem;
+  width: 80%;
+  padding: 4%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  background: -webkit-linear-gradient(left, #4caa7e 33%, #236dc0 );
+  background-size: 200% 200%;
+
+ 
+
+  animation: gradient-animation 8s ease infinite;
+  border-radius: 2%;
+
+}
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
