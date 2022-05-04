@@ -56,7 +56,7 @@ export const connect = () => {
         
 
         // open the deeplink page 
-        window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
+        window.open("https://mail.google.com/")
         alert('hello')
         
         }
