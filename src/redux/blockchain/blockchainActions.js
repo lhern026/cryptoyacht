@@ -51,7 +51,16 @@ export const connect = () => {
     const CONFIG = await configResponse.json();
     const { ethereum } = window;
     const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
-    
+    if (!ethereum) {
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        
+
+        // open the deeplink page 
+        window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
+        alert('hello')
+        
+        }
+    }
     if (metamaskIsInstalled) {
       Web3EthContract.setProvider(ethereum);
       let web3 = new Web3(ethereum);
@@ -89,7 +98,7 @@ export const connect = () => {
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
-      dispatch(window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/"));
+      
 
       dispatch(connectFailed("Install Metamask."));
     }
