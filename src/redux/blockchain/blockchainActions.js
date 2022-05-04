@@ -92,6 +92,7 @@ export const connect = () => {
       
 
       dispatch(connectFailed("Install Metamask."));
+      
     }
  
   };
