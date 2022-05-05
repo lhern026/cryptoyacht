@@ -633,13 +633,13 @@ h2{
 	width: 90%;
   top: 10%;
 	margin-left: 10%;
+  margin-top: -20rem;
   
-  margin-top: -70%;
-
+  
 }
 @media (max-width: 767.98px){
   .faq{
-    margin-top: -100%;
+    margin-top: 100%;
   }
 }
 
