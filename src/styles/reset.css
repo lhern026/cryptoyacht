@@ -603,6 +603,7 @@ button:hover {
   }
 }
 
+
 button span {
 
   font-variation-settings: "wght" 600;
@@ -716,13 +717,13 @@ h2{
 	width: 90%;
   top: 10%;
 	margin-left: 10%;
-  margin-top: -20rem;
+  margin-top: 10rem;
   
   
 }
 @media (max-width: 767.98px){
   .faq{
-    margin-top: 100%;
+    margin-top: -100rem;
   }
 }
 
@@ -875,3 +876,7 @@ h2{
     color: #06d6a0;
   }
 }
+@media(max-width: 900px){
+  .faq{
+    margin-top: 10rem;
+  }}

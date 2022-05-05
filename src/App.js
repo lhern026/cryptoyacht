@@ -463,7 +463,7 @@ function App() {
           </div>
         </s.Container>
       </s.Container>
-      
+   
         <div className="about"> 
             
             <button className="buttons"><span>CRYPTO</span> <span class="emphasis">YACHT CLUB</span></button>
