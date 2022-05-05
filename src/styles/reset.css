@@ -354,7 +354,7 @@ div {
 }
 
 .menu-wrap .menu > div {
-  background: blue;
+  background: black;
   border-radius: 50%;
   width: 200vw;
   height: 200vw;
@@ -377,7 +377,7 @@ div {
 
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  color: red;
+  color: #236dc0;
   font-size: 1rem;
   padding: 1rem;
 }
