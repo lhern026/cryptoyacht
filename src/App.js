@@ -4,6 +4,7 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
+import { Canvas, useFrame } from '@react-three/fiber'
 
 
 
@@ -465,7 +466,7 @@ function App() {
       
         <div className="about"> 
             
-            <button><span>CRYPTO</span> <span class="emphasis">YACHT CLUB</span></button>
+            <button className="buttons"><span>CRYPTO</span> <span class="emphasis">YACHT CLUB</span></button>
     <svg viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
             
         

@@ -580,25 +580,27 @@ button:hover {
   transform: scale(1.1) translate(1vw, 0);
   animation: button-text-color 2s ease infinite alternate;
 }
-button {
+
+.buttons {
   font-family: "Kufam", sans-serif;
-  text-align: inline-start;
-  padding-inline-start: 2vw;
-  padding-block-start: 0.8vw;
+
+  
   font-variation-settings: "wght" 500;
   text-transform: uppercase;
   background-color: ghostwhite;
   border: 1px solid black;
   margin-top: 2rem;
-  margin-left: 50rem;
-  bottom: 4vw;
-  right: 2.4vw;
-  block-size: 10vw;
-  inline-size: 21vw;
+  margin-left: 30rem;
+  
   border-radius: 5vw 8vw 5vw 5vw;
   font-size: 2vw;
   font-weight: bold;
   box-shadow: -0.9vw -1vw 0 0 #111;
+}
+@media  (max-width: 767.98px) {
+  .buttons{
+    margin-left: 4rem;
+  }
 }
 
 button span {
@@ -614,7 +616,7 @@ button .emphasis {
 
 svg {
   z-index: -99;
-  height: 100%;
+ 
 }
 .roadmap{
  
