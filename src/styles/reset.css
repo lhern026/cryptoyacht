@@ -396,6 +396,10 @@ div {
   -webkit-text-fill-color: transparent;
  
 }
+.text{
+  margin-top: 2rem;
+  padding: 1rem;
+}
 .rest {
   height: 120rem;
   margin: auto;

@@ -256,7 +256,7 @@ function App() {
               padding: 24,
               borderRadius: 24,
               border: "4px solid var(--secondary)",
-              boxShadow: "0px 5px 11px 2px var(--secondary)",
+              boxShadow: "0px 5px 11px 2px var(--primary)",
             }}
           >
             <s.TextTitle
@@ -435,10 +435,12 @@ function App() {
         
         
         </div>
+        <div className="text">
           <s.TextDescription
             style={{
               textAlign: "center",
               color: "var(--primary-text)",
+              backdropFilter: "blur(20px)"
             }}
           >
             Please make sure you are connected to the right network (
@@ -457,6 +459,7 @@ function App() {
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
           </s.TextDescription>
+          </div>
         </s.Container>
       </s.Container>
       <div className="rest">
