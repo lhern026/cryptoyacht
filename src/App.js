@@ -68,9 +68,11 @@ export const ResponsiveWrapper = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  width: 13rem;
+  width: 8rem;
+  margin-left: 33%;
   @media (min-width: 767px) {
     width: 13rem;
+    margin-left: 43%;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -231,16 +233,18 @@ function App() {
       
       
       <s.Container
-        flex={1}
+        
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--primary)" }}
+   
         
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+        <div className="header">
+          <StyledLogo alt={"logo"} src={"/config/images/logo.png"}   />
+        </div>
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+        <ResponsiveWrapper flex={1} style={{ padding: 2 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"} style={{width : 100}} >
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} style={{ transform: "scaleX(-1)" }}  />
+           
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -261,6 +265,7 @@ function App() {
                 fontSize: 50,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
+               
               }}
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
