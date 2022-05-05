@@ -70,15 +70,14 @@ export const ResponsiveWrapper = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  width: 8rem;
+  width: 10rem;
   
-  margin-left: 33%;
+  margin-left: 38%;
   @media (min-width: 767px) {
     width: 13rem;
     margin-left: 43%;
   }
-  transition: width 0.5s;
-  transition: height 0.5s;
+  
 `;
 
 export const StyledImg = styled.img`
@@ -86,7 +85,7 @@ export const StyledImg = styled.img`
 
   background-color: var(--accent);
   border-radius: 100%;
-  width: 40%;
+  width: 30%;
   @media (min-width: 900px) {
     width: 40%;
   }
