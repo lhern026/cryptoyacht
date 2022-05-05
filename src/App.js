@@ -9,6 +9,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 
 
 
+
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
 
@@ -226,6 +227,10 @@ function App() {
                 <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#faq">Faq</a></li>
                 <li><a href="#whitepaper">Whitepaper</a></li>
+                <li><a href="https://discord.com/" target="_blank"><img src="https://i.pinimg.com/564x/cf/64/fc/cf64fcce5cc8296544516488631ad676.jpg" width="35" height="35"></img></a></li>
+                <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img src="https://i.pinimg.com/originals/36/77/7f/36777f93ecf8062a887a748c3dfeac31.jpg" width="45" height="45"></img></a></li>
+
+                
               </ul>
             </div>
           </div>

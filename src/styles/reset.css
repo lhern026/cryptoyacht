@@ -620,8 +620,11 @@ svg {
  
 }
 .roadmap{
+  
  
-  margin-left: 25%;
+  text-align: center;
+  padding: 10rem;
+  font-size: 3rem;
 }
 
 
