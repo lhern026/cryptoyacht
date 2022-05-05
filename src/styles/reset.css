@@ -592,9 +592,7 @@ div {
     border-radius: 10%;
   }
 }
-.faq{
-  
-}
+
 h2{
   margin: auto;
   font-size: 5rem;
@@ -636,9 +634,15 @@ h2{
   top: 10%;
 	margin-left: 10%;
   
-  margin-top: -40%;
+  margin-top: -70%;
 
 }
+@media (max-width: 767.98px){
+  .faq{
+    margin-top: -100%;
+  }
+}
+
 .box-content-colapse {
 	width: 95%;
 	height: auto;
