@@ -462,8 +462,15 @@ function App() {
           </div>
         </s.Container>
       </s.Container>
-      <div className="rest">
+      
+        <div className="about"> 
+            
+            <button><span>CRYPTO</span> <span class="emphasis">YACHT CLUB</span></button>
+    <svg viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+            
         
+        
+        </div>
         <div>
           <h2  className="roadmap">Roadmap</h2>
           <div class="timeline">
@@ -530,7 +537,7 @@ function App() {
         </div>
       </div>
                     </div>
-            </div>
+            
             
             
             <div className="faq">

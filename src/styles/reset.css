@@ -400,11 +400,7 @@ div {
   margin-top: 2rem;
   padding: 1rem;
 }
-.rest {
-  height: 120rem;
-  margin: auto;
 
-}
 
 .timeline {
   position: relative;
@@ -534,6 +530,91 @@ div {
   font-size: 1.5rem;
   font-weight: 900;
   color: #0A1F0D;
+}
+.about h2{
+  
+  align-items: center;
+}
+.about  {
+  height: 60rem;
+}
+button {
+  transition: transform 0.2s 0.2s ease-in;
+}
+
+/* Top Eye Movement */
+.h1-container:hover ~ svg #eye-top,
+button:hover ~ svg #eye-top {
+  transform: translate(1.5%, 4.6%);
+}
+
+.h1-container:hover ~ svg #eye-top #top-pupil,
+button:hover ~ svg #eye-top #top-pupil {
+  transform: translate(1%, 3.2%);
+}
+
+/* Bottom Eye Movement */
+.h1-container:hover ~ svg #eye-bottom,
+button:hover ~ svg #eye-bottom {
+  transform: translate(5%, 0);
+}
+
+.h1-container:hover ~ svg #eye-bottom #bottom-pupil,
+button:hover ~ svg #eye-bottom #bottom-pupil {
+  transform: translate(1.8%, 0);
+}
+
+/* Left Eye Movement */
+.h1-container:hover ~ svg #eye-left,
+button:hover ~ svg #eye-left {
+  transform: translate(1%, 1%);
+}
+
+.h1-container:hover ~ svg #eye-left #left-pupil,
+button:hover ~ svg #eye-left #left-pupil {
+  transform: translate(1%, 0);
+}
+
+.h1-container:hover ~ button,
+button:hover {
+  transform: scale(1.1) translate(1vw, 0);
+  animation: button-text-color 2s ease infinite alternate;
+}
+button {
+  font-family: "Kufam", sans-serif;
+  text-align: inline-start;
+  padding-inline-start: 2vw;
+  padding-block-start: 0.8vw;
+  font-variation-settings: "wght" 500;
+  text-transform: uppercase;
+  background-color: ghostwhite;
+  border: 1px solid black;
+  margin-top: 2rem;
+  margin-left: 50rem;
+  bottom: 4vw;
+  right: 2.4vw;
+  block-size: 10vw;
+  inline-size: 21vw;
+  border-radius: 5vw 8vw 5vw 5vw;
+  font-size: 2vw;
+  font-weight: bold;
+  box-shadow: -0.9vw -1vw 0 0 #111;
+}
+
+button span {
+
+  font-variation-settings: "wght" 600;
+  font-style: italic;
+}
+
+button .emphasis {
+  font-size: 3vw;
+  font-variation-settings: "wght" 900;
+}
+
+svg {
+  z-index: -99;
+  height: 100%;
 }
 .roadmap{
  
@@ -776,5 +857,19 @@ h2{
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@keyframes button-text-color {
+  0% {
+    color: #ef476f;
+  }
+  25% {
+    color: #ffd166;
+  }
+  50% {
+    color: #118ab2;
+  }
+  100% {
+    color: #06d6a0;
   }
 }
