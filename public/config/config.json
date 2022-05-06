@@ -1,6 +1,6 @@
 {
   "CONTRACT_ADDRESS": "0x2D10E681306444399fCF6F46399c75f8a56e7834",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x54C5B81a4B4563B22Db90b6De9B312d63148E7E5",
+  "SCAN_LINK": "https://ropsten.etherscan.io/address/0x2d10e681306444399fcf6f46399c75f8a56e7834",
   "NETWORK": {
     "NAME": "Ropsten",
     "SYMBOL": "ETH",
