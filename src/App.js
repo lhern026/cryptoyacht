@@ -485,7 +485,7 @@ function App() {
         
         </div>
         <div>
-          <h2  className="roadmap">Roadmap</h2>
+        <button className="buttons"> <span class="emphasis">ROAD MAP</span></button>
           <a name="roadmap"></a>
           <div class="timeline">
   <div class="container left">
@@ -556,7 +556,7 @@ function App() {
             
             <div className="faq">
             <a name="faq"></a>
-              <h2>FAQ</h2>
+            <button className="buttons"> <span class="emphasis">FAQ</span></button>
             <div class="box-content-colapse">
 	<div class="intro-colapse">
 		<span class="caption primary-medium-color"></span>
@@ -592,7 +592,7 @@ function App() {
 
 </div>
         </div>
-        <h2>Whitepaper</h2>
+        <button className="buttons"><span class="emphasis">WHITEPAPER</span></button>
 
         <div className="whitePaper">
 

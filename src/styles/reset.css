@@ -632,7 +632,7 @@ svg {
   font-size: 4rem;
 }
 div .timeline{
-  border: .3rem solid #12355B;
+  
 }
 
 
@@ -838,14 +838,18 @@ h2{
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
-  background: -webkit-linear-gradient(left, #4caa7e 33%, #236dc0 );
+  background: -webkit-linear-gradient(left, #2540a5 33%, #236dc0 );
   background-size: 200% 200%;
+  
 
  
 
   animation: gradient-animation 8s ease infinite;
   border-radius: 2%;
 
+}
+.whiteheader{
+  background-color: black;
 }
 @-webkit-keyframes gradient-animation {
   0% {
