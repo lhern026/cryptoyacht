@@ -556,7 +556,7 @@ function App() {
             
             <div className="faq">
             <a name="faq"></a>
-            <button className="buttons"> <span class="emphasis">FAQ</span></button>
+            <button className="buttons"> <span class="emphasis">F.A.Q</span></button>
             <div class="box-content-colapse">
 	<div class="intro-colapse">
 		<span class="caption primary-medium-color"></span>
