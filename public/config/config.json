@@ -1,14 +1,14 @@
 {
-  "CONTRACT_ADDRESS": "0xc77F861a34eAA819B529e01DfAc5dF5C781896FF",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xc77f861a34eaa819b529e01dfac5df5c781896ff",
+  "CONTRACT_ADDRESS": "0x2D10E681306444399fCF6F46399c75f8a56e7834",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x54C5B81a4B4563B22Db90b6De9B312d63148E7E5",
   "NETWORK": {
-    "NAME": "Rinkeby",
+    "NAME": "Ropsten",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 3
   },
   "NFT_NAME": "CRYPTOYACHTCLUB",
   "SYMBOL": "YACHT",
-  "MAX_SUPPLY": 1000,
+  "MAX_SUPPLY": 10,
   "WEI_COST": 15000000000000000,
   "DISPLAY_COST": 0.015,
   "GAS_LIMIT": 285000,
