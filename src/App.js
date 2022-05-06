@@ -75,7 +75,7 @@ export const StyledLogo = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 28%;
+  width: 38%;
   
   @media (min-width: 767px) {
     width: 13rem;
