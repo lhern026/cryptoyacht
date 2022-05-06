@@ -225,7 +225,7 @@ function App() {
           <div>
             <div>
               <ul>
-                <li><a href="#home"><img src={"/config/images/logo.png"} width="75" height={35}></img></a></li>
+                <li><a href="#"><img src={"/config/images/logo.png"} width="75" height={35}></img></a></li>
                 <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#faq">Faq</a></li>
                 <li><a href="#whitepaper">Whitepaper</a></li>
