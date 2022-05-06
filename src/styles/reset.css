@@ -622,7 +622,9 @@ svg {
   z-index: -99;
  
 }
+
 .roadmap{
+  background-color: black;
   
   
   text-align: center;
@@ -630,7 +632,7 @@ svg {
   font-size: 4rem;
 }
 div .timeline{
-  border: .5rem solid #12355B;
+  border: .3rem solid #12355B;
 }
 
 
