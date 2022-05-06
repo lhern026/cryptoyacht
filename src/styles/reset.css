@@ -538,6 +538,8 @@ div {
 .about  {
   height: 60rem;
   margin-top: 5rem;
+  border: .5rem solid var(--secondary);
+  background-color: #6290C3;
 }
 button {
   transition: transform 0.2s 0.2s ease-in;
@@ -622,10 +624,13 @@ svg {
 }
 .roadmap{
   
- 
+  
   text-align: center;
  
   font-size: 3rem;
+}
+div .timeline{
+  border: .5rem solid #12355B;
 }
 
 
@@ -714,9 +719,10 @@ h2{
 	color: var(--secondary);
 }
 .faq h2{
-  
+  border: 1px solid black;
   text-align: center;
   margin-bottom: 2rem;
+  margin: auto;
 }
 .faq {
 	width: 90%;
