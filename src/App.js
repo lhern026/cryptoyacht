@@ -225,7 +225,7 @@ function App() {
           <div>
             <div>
               <ul>
-                <li><a href="#home">Logo</a></li>
+                <li><a href="#home"><img src={"/config/images/logo.png"} width="75" height={35}></img></a></li>
                 <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#faq">Faq</a></li>
                 <li><a href="#whitepaper">Whitepaper</a></li>
@@ -482,6 +482,7 @@ function App() {
         </div>
         <div>
           <h2  className="roadmap">Roadmap</h2>
+          <a name="roadmap"></a>
           <div class="timeline">
   <div class="container left">
    
@@ -550,6 +551,7 @@ function App() {
             
             
             <div className="faq">
+            <a name="faq"></a>
               <h2>FAQ</h2>
             <div class="box-content-colapse">
 	<div class="intro-colapse">

@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0xAe26D5B26637d7b8ca5797530170962e47e6840e",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/tx/0xef903790e53ff0891b9ea6e150224f3e0badfd2983fb02f6943060092f2460be",
+  "CONTRACT_ADDRESS": "0xc77F861a34eAA819B529e01DfAc5dF5C781896FF",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xc77f861a34eaa819b529e01dfac5df5c781896ff",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "ETH",
@@ -8,9 +8,9 @@
   },
   "NFT_NAME": "CRYPTOYACHTCLUB",
   "SYMBOL": "YACHT",
-  "MAX_SUPPLY": 100,
-  "WEI_COST": 75000000000000000,
-  "DISPLAY_COST": 0.075,
+  "MAX_SUPPLY": 1000,
+  "WEI_COST": 15000000000000000,
+  "DISPLAY_COST": 0.015,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/",

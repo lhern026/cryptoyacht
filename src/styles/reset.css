@@ -627,7 +627,7 @@ svg {
   
   text-align: center;
  
-  font-size: 3rem;
+  font-size: 4rem;
 }
 div .timeline{
   border: .5rem solid #12355B;
@@ -726,8 +726,8 @@ h2{
 }
 .faq {
 	width: 100%;
-  top: 10%;
-	
+  
+	margin: auto;
   margin-top: 10rem;
   margin-bottom: 10rem;
 
