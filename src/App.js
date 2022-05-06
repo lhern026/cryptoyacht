@@ -5,6 +5,8 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import { Canvas, useFrame } from '@react-three/fiber'
+import { Points, PointMaterial } from '@react-three/drei'
+
 
 
 
@@ -251,6 +253,7 @@ function App() {
           <StyledLogo alt={"logo"} src={"/config/images/logo.png"}   />
         </div>
         <s.SpacerSmall />
+        
         <ResponsiveWrapper flex={1} style={{ padding: 2 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"} style={{width : 100}} >
            
@@ -473,7 +476,7 @@ function App() {
       </s.Container>
    
         <div className="about"> 
-            <h2>About </h2>
+            
             <button className="buttons"><span>CRYPTO</span> <span class="emphasis">YACHT CLUB</span></button>
 
     <svg viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>

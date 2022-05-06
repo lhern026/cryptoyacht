@@ -726,10 +726,13 @@ h2{
 }
 .faq {
 	width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   
 	margin: auto;
   margin-top: 10rem;
   margin-bottom: 10rem;
+  background-color: black;
 
   
   
