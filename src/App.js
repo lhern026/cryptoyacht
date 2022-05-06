@@ -70,12 +70,14 @@ export const ResponsiveWrapper = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  width: 10rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
   
-  margin-left: 38%;
   @media (min-width: 767px) {
     width: 13rem;
-    margin-left: 43%;
+    margin-left: auto;
   }
   
 `;
@@ -470,8 +472,9 @@ function App() {
       </s.Container>
    
         <div className="about"> 
-            
+            <h2>About </h2>
             <button className="buttons"><span>CRYPTO</span> <span class="emphasis">YACHT CLUB</span></button>
+
     <svg viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
             
         

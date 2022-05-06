@@ -537,6 +537,7 @@ div {
 }
 .about  {
   height: 60rem;
+  margin-top: 5rem;
 }
 button {
   transition: transform 0.2s 0.2s ease-in;
@@ -590,7 +591,7 @@ button:hover {
   background-color: ghostwhite;
   border: 1px solid black;
   margin-top: 2rem;
-  margin-left: 30rem;
+  margin-left: 10rem;
   
   border-radius: 5vw 8vw 5vw 5vw;
   font-size: 2vw;
@@ -685,6 +686,7 @@ h2{
   font-size: 5rem;
   font-weight: 900;
   color: #0A1F0D;
+  text-align: center;
 }
 @media only screen and (max-width: 600px) {
   h2 {
@@ -713,7 +715,7 @@ h2{
 }
 .faq h2{
   
-  margin-left: 7rem;
+  text-align: center;
   margin-bottom: 2rem;
 }
 .faq {
@@ -721,6 +723,8 @@ h2{
   top: 10%;
 	margin-left: 10%;
   margin-top: 10rem;
+  margin-bottom: 10rem;
+
   
   
 }
