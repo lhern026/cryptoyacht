@@ -5,7 +5,9 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Points, PointMaterial } from '@react-three/drei'
+import { slide as Menu } from 'react-burger-menu'
+
+
 
 
 
@@ -253,6 +255,7 @@ function App() {
           <StyledLogo alt={"logo"} src={"/config/images/logo.png"}   />
         </div>
         <s.SpacerSmall />
+        
         
         <ResponsiveWrapper flex={1} style={{ padding: 2 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"} style={{width : 100}} >

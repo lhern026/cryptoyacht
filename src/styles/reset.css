@@ -356,6 +356,7 @@ div {
 .menu-wrap .menu > div {
   background: black;
   border-radius: 50%;
+  opacity: .92;
   width: 200vw;
   height: 200vw;
   display: flex;
