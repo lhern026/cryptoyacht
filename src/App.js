@@ -222,29 +222,18 @@ function App() {
   return (
     
     <s.Screen>
+      <Menu stack>
+      <a href="#"><img src={"/config/images/logo.png"} width="75" height={35}></img></a>
+      <a href="#roadmap" className="menu-item">Roadmap</a>
+      <a href="#faq" className="menu-item">Faq</a>
+      <a href="#whitepaper" className="menu-item">Whitepaper</a>
+      <a href="https://discord.com/" target="_blank"><img src="https://i.pinimg.com/564x/cf/64/fc/cf64fcce5cc8296544516488631ad676.jpg" width="35" height="35"></img></a>
+      <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="https://i.pinimg.com/originals/36/77/7f/36777f93ecf8062a887a748c3dfeac31.jpg" width="45" height="45"></img></a>
+        </Menu>
       
-      <div class="menu-wrap">
-        <input type="checkbox" class="toggler"/>
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-          <div>
-            <div>
-              <ul>
-                <li><a href="#"><img src={"/config/images/logo.png"} width="75" height={35}></img></a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
-                <li><a href="#faq">Faq</a></li>
-                <li><a href="#whitepaper">Whitepaper</a></li>
-                <li><a href="https://discord.com/" target="_blank"><img src="https://i.pinimg.com/564x/cf/64/fc/cf64fcce5cc8296544516488631ad676.jpg" width="35" height="35"></img></a></li>
-                <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img src="https://i.pinimg.com/originals/36/77/7f/36777f93ecf8062a887a748c3dfeac31.jpg" width="45" height="45"></img></a></li>
-
-                
-              </ul>
-            </div>
-          </div>
-        </div>
-  </div>
+     
       
-      
+  
       <s.Container
         
         ai={"center"}
@@ -255,6 +244,7 @@ function App() {
           <StyledLogo alt={"logo"} src={"/config/images/logo.png"}   />
         </div>
         <s.SpacerSmall />
+          
         
         
         <ResponsiveWrapper flex={1} style={{ padding: 2 }} test>
