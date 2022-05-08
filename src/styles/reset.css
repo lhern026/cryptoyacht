@@ -159,7 +159,13 @@ body {
 html {
   background-color: "#4C4C4C";
 }
-
+a{
+  text-decoration: none;
+  color: snow;
+}
+a:hover{
+  color: blue;
+}
 div {
   -moz-user-select: none;
   -webkit-user-select: none;
