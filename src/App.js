@@ -88,6 +88,7 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
+  
 
   background-color: var(--accent);
   border-radius: 100%;
@@ -102,8 +103,9 @@ export const StyledImg = styled.img`
 `;
 
 export const StyledLink = styled.a`
-  color: var(--secondary);
+  color: var(--primary);
   text-decoration: none;
+  text-shadow: -10px 0px 10px white;
 `;
 
 function App() {
@@ -223,7 +225,7 @@ function App() {
     
     <s.Screen>
       <Menu stack>
-      <a href="#"><img src={"/config/images/logo.png"} width="75" height={35}></img></a>
+      <a href="#"><img src={"/config/images/logo.png"} width="95" height={35}></img></a>
       <a href="#roadmap" className="menu-item">Roadmap</a>
       <a href="#faq" className="menu-item">Faq</a>
       <a href="#whitepaper" className="menu-item">Whitepaper</a>
@@ -594,6 +596,7 @@ function App() {
 
           
         </div>
+        <div className="footer"></div>
 
         
        

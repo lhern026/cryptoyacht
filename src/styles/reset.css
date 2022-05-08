@@ -550,6 +550,7 @@ div {
 }
 button {
   transition: transform 0.2s 0.2s ease-in;
+
 }
 
 /* Top Eye Movement */
@@ -962,7 +963,7 @@ h2{
   
   /* Wrapper for item list */
   .bm-item-list {
-    color: #b8b7ad;
+    color: red;
     padding: 0.8em;
   }
   
@@ -976,3 +977,9 @@ h2{
   .bm-overlay {
     background: rgba(153, 52, 52, 0.3);
   }
+/* footers */
+.footer{
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+}
