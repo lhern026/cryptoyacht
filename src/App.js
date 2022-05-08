@@ -490,63 +490,69 @@ function App() {
   <div class="container left">
    
     <i class="icon fa fa-home"></i>
+    <AnimationOnScroll animateIn="animate__backInUp ">
     <div class="content">
       <h2>Phase 1</h2>
       <p>
         Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
       </p>
-    </div>
+    </div></AnimationOnScroll>
   </div>
   <div class="container right">
 
     <i class="icon fa fa-gift"></i>
+    <AnimationOnScroll animateIn="animate__backInUp ">
     <div class="content">
       <h2>Phase 2</h2>
       <p>
         Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
       </p>
-    </div>
+    </div></AnimationOnScroll>
   </div>
   <div class="container left">
    
     <i class="icon fa fa-user"></i>
+    <AnimationOnScroll animateIn="animate__backInUp ">
     <div class="content">
       <h2>Phase 3</h2>
       <p>
         Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
       </p>
-    </div>
+    </div></AnimationOnScroll>
   </div>
   <div class="container right">
    
     <i class="icon fa fa-running"></i>
+    <AnimationOnScroll animateIn="animate__backInUp ">
     <div class="content">
       <h2>Phase 4</h2>
       <p>
         Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
       </p>
-    </div>
+    </div></AnimationOnScroll>
   </div>
   <div class="container left">
     
     <i class="icon fa fa-cog"></i>
+    <AnimationOnScroll animateIn="animate__backInUp ">
     <div class="content">
       <h2>Phase 5</h2>
       <p>
         Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
       </p>
-    </div>
+    </div></AnimationOnScroll>
   </div>
   <div class="container right">
     
     <i class="icon fa fa-certificate"></i>
+    <AnimationOnScroll animateIn="animate__backInUp ">
     <div class="content">
       <h2>Phase 6</h2>
       <p>
         Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
       </p>
       
-          </div>
+          </div></AnimationOnScroll>
         </div>
       </div>
                     </div>
@@ -594,7 +600,7 @@ function App() {
         <button className="buttons"><span class="emphasis">WHITEPAPER</span></button>
 
         <div className="whitePaper">
-        <AnimationOnScroll animateIn="animate__bounce animate__delay-1s">
+        <AnimationOnScroll animateIn="animate__jello ">
           <svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Sun">
             <rect width="120" height="100" />
