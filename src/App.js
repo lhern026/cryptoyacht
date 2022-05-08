@@ -490,7 +490,7 @@ function App() {
   <div class="container left">
    
     <i class="icon fa fa-home"></i>
-    <AnimationOnScroll animateIn="animate__backInUp ">
+    <AnimationOnScroll animateIn="animate__backInUp " animateOnce>
     <div class="content">
       <h2>Phase 1</h2>
       <p>
@@ -501,7 +501,7 @@ function App() {
   <div class="container right">
 
     <i class="icon fa fa-gift"></i>
-    <AnimationOnScroll animateIn="animate__backInUp ">
+    <AnimationOnScroll animateIn="animate__backInUp " animateOnce>
     <div class="content">
       <h2>Phase 2</h2>
       <p>
@@ -512,7 +512,7 @@ function App() {
   <div class="container left">
    
     <i class="icon fa fa-user"></i>
-    <AnimationOnScroll animateIn="animate__backInUp ">
+    <AnimationOnScroll animateIn="animate__backInUp " animateOnce>
     <div class="content">
       <h2>Phase 3</h2>
       <p>
@@ -523,7 +523,7 @@ function App() {
   <div class="container right">
    
     <i class="icon fa fa-running"></i>
-    <AnimationOnScroll animateIn="animate__backInUp ">
+    <AnimationOnScroll animateIn="animate__backInUp " animateOnce>
     <div class="content">
       <h2>Phase 4</h2>
       <p>
@@ -534,7 +534,7 @@ function App() {
   <div class="container left">
     
     <i class="icon fa fa-cog"></i>
-    <AnimationOnScroll animateIn="animate__backInUp ">
+    <AnimationOnScroll animateIn="animate__backInUp " animateOnce>
     <div class="content">
       <h2>Phase 5</h2>
       <p>
@@ -545,7 +545,7 @@ function App() {
   <div class="container right">
     
     <i class="icon fa fa-certificate"></i>
-    <AnimationOnScroll animateIn="animate__backInUp ">
+    <AnimationOnScroll animateIn="animate__backInUp " animateOnce>
     <div class="content">
       <h2>Phase 6</h2>
       <p>
