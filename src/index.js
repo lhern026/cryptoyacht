@@ -5,10 +5,18 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import "./styles/reset.css";
+import { BrowserRouter ,Routes, Route } from "react-router-dom";
+import Mint from "./Mint"
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="mint" element={<Mint />} />
+ 
+      </Routes>
+    </BrowserRouter>
   </Provider>,
   document.getElementById("root")
 );

@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x3136852c9e39ce96170cfa7a68c1067c8d2bfb4c",
-  "SCAN_LINK": "https://ropsten.etherscan.io/address/0x2d10e681306444399fcf6f46399c75f8a56e7834",
+  "CONTRACT_ADDRESS": "0xDaf9BAF25EBf00D93B3d3006d90C0991F75Abb15",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xdaf9baf25ebf00d93b3d3006d90c0991f75abb15",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "ETH",
@@ -13,6 +13,6 @@
   "DISPLAY_COST": 0.015,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/cryptoyacht-v3",
   "SHOW_BACKGROUND": true
 }
