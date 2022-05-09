@@ -167,7 +167,7 @@ function Mint() {
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
           
       if((navigator.userAgent.indexOf("Safari")) || (navigator.userAgent.indexOf("Chrome"))){
-        window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/")
+        window.open("https://metamask.app.link/dapp/cryptoyacht.vercel.app/mint/")
        
       
       // open the deeplink page 
@@ -242,7 +242,7 @@ function Mint() {
         
       >
         <div className="header">
-        <a href="#"><StyledLogo alt={"logo"} src={"/config/images/logo.png"}   /></a>
+        <Link to="/"><StyledLogo alt={"logo"} src={"/config/images/logo.png"}   /></Link>
         </div>
         <s.SpacerSmall />
         
