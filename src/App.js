@@ -229,7 +229,7 @@ function App() {
 
     <s.Screen>
       <Menu stack>
-      <a href="#"><img src={"/config/images/logo.png"} width="95" height={35}></img></a>
+      <Link to="/"><img src={"/config/images/logo.png"} width="95" height={35}></img></Link>
       <a href="#roadmap" className="menu-item">Roadmap</a>
       <a href="#faq" className="menu-item">Faq</a>
       <a href="#whitepaper" className="menu-item">Whitepaper</a>
