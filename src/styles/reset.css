@@ -566,6 +566,11 @@ div {
   box-shadow: 10px 10px 10px snow;
   font-size: 4vw;
 }
+@media  (max-width: 767.98px) {
+  .about{
+    min-height: 35rem;
+  }
+}
 button {
   transition: transform 0.2s 0.2s ease-in;
 
