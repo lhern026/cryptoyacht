@@ -600,7 +600,7 @@ button:hover ~ svg #eye-left #left-pupil {
 .h1-container:hover ~ button,
 button:hover {
   transform: scale(1.1) translate(1vw, 0);
-  animation: button-text-color 2s ease infinite alternate;
+  animation: button-text-color 5s ease infinite alternate;
 }
 
 .buttons {
@@ -903,16 +903,16 @@ h2{
 }
 @keyframes button-text-color {
   0% {
-    color: #ef476f;
+    color: #5d1276;
   }
   25% {
-    color: #ffd166;
+    color: #150960;
   }
   50% {
-    color: #118ab2;
+    color: #075974;
   }
   100% {
-    color: #06d6a0;
+    color: #6b06d6;
   }
 }
 @media(max-width: 900px){
