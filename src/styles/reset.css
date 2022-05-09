@@ -452,7 +452,7 @@ div {
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #006E51;
+  border: 2px solid black;
   border-radius: 16px;
   z-index: 1;
 }
@@ -468,7 +468,7 @@ div {
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #006E51;
+  background: rgb(85, 0, 85);
   z-index: 1;
 }
 
@@ -476,18 +476,6 @@ div {
   left: 8px;
 }
 
-.container .date {
-  position: absolute;
-  display: inline-block;
-  top: calc(50% - 8px);
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: #006E51;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  z-index: 1;
-}
 
 .container.left .date {
   right: -75px;
@@ -505,7 +493,7 @@ div {
   padding: 9px 0;
   top: calc(50% - 20px);
   background: #F6F3F6;
-  border: 2px solid #006E51;
+  border: 2px solid black;
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
