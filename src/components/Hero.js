@@ -67,7 +67,7 @@ export default function Hero() {
             
             <Billboard
                         position={[0,1,.500]}
-                        args = {[4,100]}><Text fontSize={1}>CRYPTOYACHTCLUB</Text>
+                        args = {[4,100]}><Text fontSize={1} facade={[Text3DFacade]}>CRYPTO YACHT CLUB</Text>
             <meshBasicMaterial attach="material" color="rgb(9,15,74)" />
               </Billboard>
        
