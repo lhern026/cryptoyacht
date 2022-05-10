@@ -1,4 +1,4 @@
-import { Html,Environment,Plane,Sphere, OrbitControls, PerspectiveCamera ,Billboard,Text} from "@react-three/drei";
+import {Stars,ScrollControls,Scroll, Float, Image,Environment,Plane,Sphere, OrbitControls, PerspectiveCamera ,Billboard,Text} from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { Text3DFacade } from "troika-3d-text";
 import { useEffect, useRef } from "react";
@@ -62,14 +62,26 @@ export default function Hero() {
 
             {/* Ball */}
             
-           
-            
-            
-            <Billboard
-                        position={[0,1,.500]}
+            <Stars radius={1} depth={50} count={50000} factor={4} saturation={0} fade speed={1} />
+            <ScrollControls 
+            pages={3} // Each page takes 100% of the height of the canvas
+            distance={1} // A factor that increases scroll bar travel (default: 1)
+            damping={4} // Friction, higher is faster (default: 4)
+            horizontal={false} // Can also scroll horizontally (default: false)
+            infinite={false}>
+                <Scroll>
+            <Float
+                            speed={1.5} // Animation speed, defaults to 1
+                            rotationIntensity={2} // XYZ rotation intensity, defaults to 1
+                            floatIntensity={2} // Up/down float intensity, defaults to 1
+ >
+                <Billboard
+                        position={[0,2,.500]}
                         args = {[4,100]}><Text fontSize={1} facade={[Text3DFacade]}>CRYPTO YACHT CLUB</Text>
-            <meshBasicMaterial attach="material" color="rgb(9,15,74)" />
+        
               </Billboard>
+                </Float></Scroll>
+            
        
 
             {/* Car */}
@@ -77,15 +89,15 @@ export default function Hero() {
 
             {/* Floor */}
             <mesh rotation={[-(angleToRadians(90)), 0, 0]} receiveShadow>
-                <planeGeometry args={[20, 20]} />
+                <planeGeometry args={[30, 30]} />
                 <meshStandardMaterial color="rgb(6, 25, 39)" />
             </mesh>
 
             {/* Ambient light */}
-            <ambientLight args={["#ffffff", 1]} />
+            <ambientLight args={["#746df9", 1]} />
 
             {/* Spotlight light */}
-            <spotLight args={["#746df9", 80, 7, angleToRadians(45), 0.4]} position={[-3, 1, 3]} castShadow />
+            <spotLight args={["#ffffff", 20, 90, angleToRadians(45), 0.4]} position={[-3, 1, 3]} castShadow />
 
             {/* Environmnet */}
             <Environment background>
@@ -94,7 +106,7 @@ export default function Hero() {
 
                     <meshBasicMaterial color="#746df9" side={THREE.BackSide} />
                 </mesh>
-            </Environment>
+            </Environment></ScrollControls>
         </>
     )
 }
