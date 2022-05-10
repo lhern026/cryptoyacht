@@ -1,4 +1,4 @@
-import {Stars,ScrollControls,Scroll, Float, Image,Environment,Plane,Sphere, OrbitControls, PerspectiveCamera ,Billboard,Text} from "@react-three/drei";
+import {Cloud,Sky,ScrollControls,Scroll, Float, Image,Environment,Plane,Sphere, OrbitControls, PerspectiveCamera ,Billboard,Text} from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { Text3DFacade } from "troika-3d-text";
 import { useEffect, useRef } from "react";
@@ -62,7 +62,14 @@ export default function Hero() {
 
             {/* Ball */}
             
-            <Stars radius={1} depth={50} count={50000} factor={4} saturation={0} fade speed={1} />
+            <Sky distance={45000} sunPosition={[0, 6, 0]} inclination={10} azimuth={1}  />
+            <Cloud
+  opacity={0.5}
+  speed={0.4} // Rotation speed
+  width={10} // Width of the full cloud
+  depth={1.5} // Z-dir depth
+  segments={20} // Number of particles
+/>
             <ScrollControls 
             pages={3} // Each page takes 100% of the height of the canvas
             distance={1} // A factor that increases scroll bar travel (default: 1)
@@ -80,7 +87,7 @@ export default function Hero() {
                         args = {[4,100]}><Text fontSize={1} facade={[Text3DFacade]}>CRYPTO YACHT CLUB</Text>
         
               </Billboard>
-                </Float></Scroll>
+                </Float></Scroll></ScrollControls>
             
        
 
@@ -94,10 +101,10 @@ export default function Hero() {
             </mesh>
 
             {/* Ambient light */}
-            <ambientLight args={["#746df9", 1]} />
+            {/* <ambientLight args={["#746df9", 1]} /> */}
 
             {/* Spotlight light */}
-            <spotLight args={["#ffffff", 20, 90, angleToRadians(45), 0.4]} position={[-3, 1, 3]} castShadow />
+            {/* <spotLight args={["#ffffff", 20, 90, angleToRadians(45), 0.4]} position={[-3, 1, 3]} castShadow /> */}
 
             {/* Environmnet */}
             <Environment background>
@@ -106,7 +113,7 @@ export default function Hero() {
 
                     <meshBasicMaterial color="#746df9" side={THREE.BackSide} />
                 </mesh>
-            </Environment></ScrollControls>
+            </Environment>
         </>
     )
 }
