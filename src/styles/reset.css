@@ -602,11 +602,26 @@ button:hover {
   transform: scale(1.1) translate(1vw, 0);
   animation: button-text-color 5s ease infinite alternate;
 }
+.calltoo span{
+  font-size: larger;
+}
 .calltoo {
   width: 30vw;
-  margin-left: 10em;
-  text-align: center;
+  margin-left: 15em !important;
+  padding: 1.5rem;
+
   
+}
+@media (max-width: 760px) {
+  .calltoo span{
+    font-size: x-large;
+  }
+  .calltoo{
+    padding: 1rem;
+    width: 10rem;
+
+  }
+
 }
 .buttons {
   font-family: "Kufam", sans-serif;

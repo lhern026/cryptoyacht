@@ -253,7 +253,7 @@ function App() {
               <Hero />
             </Suspense>
             </Canvas>
-            <Link to="/mint"><button className="buttons calltoo cta">MINT YOUR NFT'S</button></Link>
+            <Link to="/mint"><button className="buttons calltoo cta"><span>MINT YOUR NFT'S</span></button></Link>
         
           
         
