@@ -55,7 +55,7 @@ export default function Hero() {
             <PerspectiveCamera makeDefault  
                     aspect={1200 / 600}
                     radius={(1200 + 600) / 4}
-                    fov={36}
+                    fov={46}
                     position={[5, 10, 2]}
                     onUpdate={self => self.updateProjectionMatrix()} />
             <OrbitControls ref={orbitControlsRef} minPolarAngle={angleToRadians(60)} maxPolarAngle={angleToRadians(80)} />
