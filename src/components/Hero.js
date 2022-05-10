@@ -51,21 +51,18 @@ export default function Hero() {
     return (
         <>
             {/* Camera */}
-            <PerspectiveCamera makeDefault position={[0, 1, 5]} />
+            <PerspectiveCamera makeDefault position={[10, 10, 5]} />
             <OrbitControls ref={orbitControlsRef} minPolarAngle={angleToRadians(60)} maxPolarAngle={angleToRadians(80)} />
 
             {/* Ball */}
-            <mesh position={[-2, 1.5, 0]} castShadow ref={ballRef}>
-                <sphereGeometry args={[0.5, 32, 32]} />
-                <meshStandardMaterial color="#ffffff" metalness={0.6} roughness={0.2} />
-            </mesh>
-            <mesh>
+            
+      
             <Billboard
                         position={[0,1,.5]}
-                        args = {[44,30]}><Text fontSize={1} color="rgb(50,75,74)"anchorX="center"characters="abcdefghijklmnopqrstuvwxyz0123456789!" anchorY="middle">CRYPTOYACHTCLUB</Text>
+                        args = {[440,300]}><Text onPointerOver={screen}  fontSize={.7} color="#ffffff"anchorX="center"characters="abcdefghijklmnopqrstuvwxyz0123456789!" anchorY="middle">CRYPTO YACHT CLUB</Text>
             <meshBasicMaterial attach="material" color="rgb(9,15,74)" />
               </Billboard>
-              </mesh>
+       
 
             {/* Car */}
           
@@ -77,16 +74,17 @@ export default function Hero() {
             </mesh>
 
             {/* Ambient light */}
-            <ambientLight args={["#ffffff", 0.25]} />
+            <ambientLight args={["#ffffff", 1]} />
 
             {/* Spotlight light */}
-            <spotLight args={["#ffffff", 7, 7, angleToRadians(45), 0.4]} position={[-3, 1, 0]} castShadow />
+            <spotLight args={["#ffffff", 8, 7, angleToRadians(45), 0.4]} position={[-3, 1, 3]} castShadow />
 
             {/* Environmnet */}
             <Environment background>
                 <mesh>
-                    <sphereGeometry args={[50, 100, 100]} />
-                    <meshBasicMaterial color="#2266cc" side={THREE.BackSide} />
+                    <sphereGeometry args={[100, 50, 100]} />
+
+                    <meshBasicMaterial color="#746df9" side={THREE.BackSide} />
                 </mesh>
             </Environment>
         </>

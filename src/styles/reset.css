@@ -1000,11 +1000,11 @@ svg{
 }
 Canvas{
   width: 100%;
-  height: 70vh;
+  height: 60vh;
 
 }
 @media  (max-width: 767.98px) {
   Canvas{
-    height: 60vh;
+    height: 50vh;
   }
 }
