@@ -16,22 +16,25 @@ const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
 
 export const StyledButton = styled.button`
-background: -webkit-linear-gradient(left, #0A1F0D, #35aee2);
-background-size: 200% 200%;
-
-height: 4rem;
-border: 0;
-margin: auto;
-margin-top: 1rem;
-
-padding-left: 40px;
-padding-right: 40px;
-border-radius: 5px;
-cursor: pointer;
-font-size: 1em;
-font-weight: bold;
-color: snow;
-  }
+    background: linear-gradient(var(--color-bg), var(--color-bg)) padding-box, linear-gradient(to right, darkblue, darkorchid) border-box;
+	 border-radius: 50px;
+	 
+     position: relative;
+	 display: inline-flex;
+	 justify-content: center;
+	 align-items: center;
+	 font-size: var(--btn-font-size, 1em);
+	 color: white;
+	 padding: var(--space-xs) var(--space-md);
+	 cursor: pointer;
+	 transition: color 0.2s;
+     border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    padding: 2%;
+    margin: .5em;
+    
+  
 `;
 
 export const StyledRoundButton = styled.button`
