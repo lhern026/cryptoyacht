@@ -6,6 +6,11 @@ import { angleToRadians } from "../utils/angle";
 import * as THREE from "three";
 import gsap from "gsap";
 import { Link, Router} from "react-router-dom";
+import { TextGeometry } from "three";
+import { extend } from "@react-three/fiber";
+import { FontLoader } from "three";
+
+extend ({TextGeometry});
 
 
 
@@ -61,10 +66,16 @@ export default function Hero() {
             <OrbitControls ref={orbitControlsRef} minPolarAngle={angleToRadians(60)} maxPolarAngle={angleToRadians(80)} />
 
             {/* Ball */}
+            <mesh>
+                <textGeometry args={['textsssss', { size:2, height: 1}]}/>
+                <meshPhysicalMaterial attach= 'material' color={'white'}/>
+
+         
+            </mesh>
             
             <Sky distance={45000} sunPosition={[0, 6, 0]} inclination={10} azimuth={1}  />
             <Cloud
-  opacity={0.5}
+  opacity={0.2}
   speed={0.4} // Rotation speed
   width={10} // Width of the full cloud
   depth={1.5} // Z-dir depth
@@ -87,7 +98,7 @@ export default function Hero() {
   lockY={false}
   lockZ={false}
                         position={[0,2,.500]}
-                        args = {[4,100]}><Text fontSize={1} facade={[Text3DFacade]}>CRYPTO YACHT CLUB</Text>
+                        args = {[4,100]}><Text  strokeColor={true} fontSize={1} facade={[Text3DFacade]}>CRYPTO YACHT CLUB</Text><meshBasicMaterial/>
         
               </Billboard>
                 </Float></Scroll></ScrollControls>
