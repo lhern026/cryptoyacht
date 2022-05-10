@@ -248,10 +248,11 @@ function App() {
         </div>
         <s.SpacerSmall />
         
- 
+          <Canvas>
             <Suspense fallback={null}>
               <Hero />
             </Suspense>
+            </Canvas>
         
           
         
