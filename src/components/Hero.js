@@ -1,10 +1,11 @@
-import { Environment, OrbitControls, PerspectiveCamera ,Billboard, Text} from "@react-three/drei";
+import { Html,Environment,Plane,Sphere, OrbitControls, PerspectiveCamera ,Billboard, Text} from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 import { useEffect, useRef } from "react";
 import { angleToRadians } from "../utils/angle";
 import * as THREE from "three";
 import gsap from "gsap";
+import { Link, Router} from "react-router-dom";
 
 
 
@@ -51,12 +52,16 @@ export default function Hero() {
     return (
         <>
             {/* Camera */}
-            <PerspectiveCamera makeDefault position={[10, 10, 5]} />
+            <PerspectiveCamera makeDefault position={[6, 1, 5]} />
             <OrbitControls ref={orbitControlsRef} minPolarAngle={angleToRadians(60)} maxPolarAngle={angleToRadians(80)} />
 
             {/* Ball */}
             
-      
+           
+            <Sphere>
+              <meshBasicMaterial color="hotpink" />
+            </Sphere>
+            
             <Billboard
                         position={[0,1,.5]}
                         args = {[440,300]}><Text onPointerOver={screen}  fontSize={.7} color="#ffffff"anchorX="center"characters="abcdefghijklmnopqrstuvwxyz0123456789!" anchorY="middle">CRYPTO YACHT CLUB</Text>
@@ -77,7 +82,7 @@ export default function Hero() {
             <ambientLight args={["#ffffff", 1]} />
 
             {/* Spotlight light */}
-            <spotLight args={["#ffffff", 8, 7, angleToRadians(45), 0.4]} position={[-3, 1, 3]} castShadow />
+            <spotLight args={["#746df9", 80, 7, angleToRadians(45), 0.4]} position={[-3, 1, 3]} castShadow />
 
             {/* Environmnet */}
             <Environment background>

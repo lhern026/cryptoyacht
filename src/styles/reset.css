@@ -602,7 +602,12 @@ button:hover {
   transform: scale(1.1) translate(1vw, 0);
   animation: button-text-color 5s ease infinite alternate;
 }
-
+.calltoo {
+  width: 30vw;
+  margin-left: 10em;
+  text-align: center;
+  
+}
 .buttons {
   font-family: "Kufam", sans-serif;
 

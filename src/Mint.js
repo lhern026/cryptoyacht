@@ -344,7 +344,7 @@ function Mint() {
                     
                         
                         
-                      }}>open metamask (mobile only)</StyledButton>
+                      }}>OPEN METAMASK (mobile only)</StyledButton>
                     <StyledButton
                       onClick={(e) => {
                         e.preventDefault();
