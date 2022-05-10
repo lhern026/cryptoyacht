@@ -61,9 +61,9 @@ export default function Hero() {
             </mesh>
             <mesh>
             <Billboard
-                        position={[0,1,1]}
-                        args = {[44,30]}><Text fontSize={.5} color="rgb(9,15,74)">CRYPTOYACHTCLUB</Text>
-            <meshBasicMaterial attach="material" color="#ffffff" />
+                        position={[0,1,.5]}
+                        args = {[44,30]}><Text fontSize={1} color="rgb(50,75,74)"anchorX="center"characters="abcdefghijklmnopqrstuvwxyz0123456789!" anchorY="middle">CRYPTOYACHTCLUB</Text>
+            <meshBasicMaterial attach="material" color="rgb(9,15,74)" />
               </Billboard>
               </mesh>
 
@@ -73,14 +73,14 @@ export default function Hero() {
             {/* Floor */}
             <mesh rotation={[-(angleToRadians(90)), 0, 0]} receiveShadow>
                 <planeGeometry args={[20, 20]} />
-                <meshStandardMaterial color="#1ea3d8" />
+                <meshStandardMaterial color="rgb(6, 25, 39)" />
             </mesh>
 
             {/* Ambient light */}
             <ambientLight args={["#ffffff", 0.25]} />
 
             {/* Spotlight light */}
-            <spotLight args={["#ffffff", 23, 7, angleToRadians(45), 0.4]} position={[-3, 1, 0]} castShadow />
+            <spotLight args={["#ffffff", 7, 7, angleToRadians(45), 0.4]} position={[-3, 1, 0]} castShadow />
 
             {/* Environmnet */}
             <Environment background>
