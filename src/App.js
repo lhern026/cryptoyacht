@@ -253,6 +253,7 @@ function App() {
               <Hero />
             </Suspense>
             </Canvas>
+          <button className="buttons">MINT YOUR NFT'S</button>
         
           
         
