@@ -93,7 +93,7 @@ export default function Hero() {
                             rotationIntensity={2} // XYZ rotation intensity, defaults to 1
                             floatIntensity={2} // Up/down float intensity, defaults to 1
  >
-                <Billboard follow={true}
+                <Billboard follow={true} 
   lockX={false}
   lockY={false}
   lockZ={false}

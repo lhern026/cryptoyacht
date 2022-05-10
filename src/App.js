@@ -253,7 +253,8 @@ function App() {
               <Hero />
             </Suspense>
             </Canvas>
-            <Link to="/mint"><button className="buttons calltoo cta"><span>MINT YOUR NFT'S</span></button></Link>
+            <AnimationOnScroll animateIn="animate__lightSpeedInLeft">
+            <Link to="/mint"><button className="buttons calltoo "><span>MINT YOUR NFTS</span></button></Link></AnimationOnScroll>
         
           
         
