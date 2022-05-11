@@ -1,4 +1,5 @@
 import {
+  Sparkles,
   Cloud,
   Sky,
   ScrollControls,
@@ -12,6 +13,7 @@ import {
   PerspectiveCamera,
   Billboard,
   Text,
+  Stars,
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { Text3DFacade } from "troika-3d-text";
@@ -75,8 +77,8 @@ export default function Hero() {
         makeDefault
         aspect={1200 / 600}
         radius={(1200 + 600) / 4}
-        fov={46}
-        position={[5, 10, 2]}
+        fov={86}
+        position={[3, 10, 2]}
         onUpdate={(self) => self.updateProjectionMatrix()}
       />
       <OrbitControls
@@ -86,59 +88,45 @@ export default function Hero() {
       />
 
       {/* Ball */}
-      <mesh>
-        <textGeometry args={["textsssss", { size: 2, height: 1 }]} />
-        <meshPhysicalMaterial attach="material" color={"white"} />
-      </mesh>
+      <Sparkles
+        color={"#ffffff"}
+        count={22222}
+        size={0.9}
+        scale={[20, 20, 20]}
+        noise={0}
+      />
 
-      <Sky
-        distance={45000}
-        sunPosition={[0, 6, 0]}
-        inclination={10}
-        azimuth={1}
-      />
-      <Cloud
-        opacity={0.2}
-        speed={0.4} // Rotation speed
-        width={10} // Width of the full cloud
-        depth={1.5} // Z-dir depth
-        segments={20} // Number of particles
-      />
-      <ScrollControls
-        pages={3} // Each page takes 100% of the height of the canvas
-        distance={1} // A factor that increases scroll bar travel (default: 1)
-        damping={4} // Friction, higher is faster (default: 4)
-        horizontal={false} // Can also scroll horizontally (default: false)
-        infinite={false}
+      <Float
+        speed={1} // Animation speed, defaults to 1
+        rotationIntensity={1} // XYZ rotation intensity, defaults to 1
+        floatIntensity={1} // Up/down float intensity, defaults to 1
       >
-        <Scroll>
-          <Float
-            speed={1.5} // Animation speed, defaults to 1
-            rotationIntensity={2} // XYZ rotation intensity, defaults to 1
-            floatIntensity={2} // Up/down float intensity, defaults to 1
+        <Billboard
+          follow={true}
+          lockX={false}
+          lockY={false}
+          lockZ={false}
+          position={[0, 2, 0.5]}
+          args={[4, 100]}
+        >
+          <Text
+            maxWidth={20}
+            fontSize={2}
+            outlineWidth={0.2}
+            outlineColor="#000000"
+            strokeWidth={".9%"}
+            strokeColor="#000000"
           >
-            <Billboard
-              follow={true}
-              lockX={false}
-              lockY={false}
-              lockZ={false}
-              position={[0, 2, 0.5]}
-              args={[4, 100]}
-            >
-              <Text strokeColor={true} fontSize={1} facade={[Text3DFacade]}>
-                CRYPTO YACHT CLUB
-              </Text>
-              <meshBasicMaterial />
-            </Billboard>
-          </Float>
-        </Scroll>
-      </ScrollControls>
+            CRYPTO YACHT CLUB
+          </Text>
+        </Billboard>
+      </Float>
 
       {/* Car */}
 
       {/* Floor */}
       <mesh rotation={[-angleToRadians(90), 0, 0]} receiveShadow>
-        <planeGeometry args={[30, 30]} />
+        <planeGeometry args={[300, 300]} />
         <meshStandardMaterial color="rgb(6, 25, 39)" />
       </mesh>
 
@@ -153,7 +141,7 @@ export default function Hero() {
         <mesh>
           <sphereGeometry args={[100, 50, 100]} />
 
-          <meshBasicMaterial color="#746df9" side={THREE.BackSide} />
+          <meshBasicMaterial color="#000000" side={THREE.BackSide} />
         </mesh>
       </Environment>
     </>
